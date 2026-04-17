@@ -5,6 +5,7 @@ import { animated } from "@react-spring/web";
 import styles from "./Hero.module.css";
 import { useHeroScroll } from "@/hooks/use-hero-scroll";
 import { SubHeroCard } from "./components/SubHeroCard";
+import { determineRoleFromParams } from "@/utils/determine-role-from-params";
 
 export const Hero = () => {
   const {
@@ -14,7 +15,7 @@ export const Hero = () => {
     ctaAnimation,
     scrollToProjects,
   } = useHeroScroll();
-
+  const role = determineRoleFromParams();
   return (
     <section className={styles.hero} ref={ref}>
       <div className={styles.container}>
@@ -28,7 +29,7 @@ export const Hero = () => {
               <span className={styles.titleLine1}>Raghul</span>
               <span className={styles.titleLine2}>Rajalingam</span>
               <span className={styles.titleAccent}>
-                React Developer & Creative Engineer
+                `{role}` Developer & Creative Engineer
               </span>
             </animated.h1>
 

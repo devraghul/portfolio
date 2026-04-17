@@ -16,7 +16,6 @@ export default function Home() {
   return (
     <ThemeProvider>
       <div className={styles.page}>
-        <CustomCursor />
         <Navigation />
         <main className={styles.main}>
           <section id="home">

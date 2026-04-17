@@ -347,6 +347,9 @@ a {
     animation: none;
   }
 }
+button{
+  cursor: pointer;
+}
 
 /* Mobile optimizations */
 @media (max-width: 768px) {

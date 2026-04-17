@@ -3,8 +3,7 @@ import styles from "../About.module.css";
 
 const skills = [
   { name: "Frontend Development", percentage: 95 },
-  { name: "React & Next.js", percentage: 92 },
-  { name: "Backend Development", percentage: 88 },
+  { name: "Backend Development", percentage: 92 },
   { name: "UI/UX Design", percentage: 85 },
   { name: "Database Management", percentage: 80 },
 ];

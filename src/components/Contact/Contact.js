@@ -33,12 +33,6 @@ export const Contact = () => {
 
   const contactInfo = [
     {
-      icon: "📧",
-      label: "Email",
-      value: "raghul.r2805@gmail.com",
-      link: "mailto:raghul.r2805@gmail.com",
-    },
-    {
       icon: "📲",
       label: "LinkedIn",
       value: "Raghul Rajalingam",
@@ -48,7 +42,7 @@ export const Contact = () => {
       icon: "📍",
       label: "Location",
       value: "India, Chennai",
-      link: "https://maps.google.com",
+      link: "https://www.google.com/maps/place/chennai",
     },
   ];
 

@@ -1,8 +1,10 @@
 import React from "react";
 import styles from "../About.module.css";
 import { personalInfo, cmsStaticData } from "@/CMS/details";
+import { determineRoleFromParams } from "@/utils/determine-role-from-params";
 
 export const ProfileDescription = ({ inView }) => {
+  const role = determineRoleFromParams();
   return (
     <div
       className={`${styles.personalInfo} ${inView ? styles.slideInLeft : ""}`}
@@ -11,7 +13,7 @@ export const ProfileDescription = ({ inView }) => {
         <div className={styles.aboutText}>
           <p>
             Hi! I&apos;m a passionate{" "}
-            <span className={styles.highlight}>Front end Developer</span> with
+            <span className={styles.highlight}>{role} Developer</span> with
             over <span>{personalInfo.totalExperience}</span> years of experience
             creating innovative digital solutions. I specialize in building
             scalable web applications using modern technologies.
