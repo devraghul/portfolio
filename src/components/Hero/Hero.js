@@ -1,6 +1,6 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { animated } from "@react-spring/web";
 import styles from "./Hero.module.css";
 import { useHeroScroll } from "@/hooks/use-hero-scroll";
@@ -15,7 +15,11 @@ export const Hero = () => {
     ctaAnimation,
     scrollToProjects,
   } = useHeroScroll();
-  const role = determineRoleFromParams(window?.location?.search || "");
+  const [role, setRole] = useState(() => determineRoleFromParams(""));
+
+  useEffect(() => {
+    setRole(determineRoleFromParams(window?.location?.search || ""));
+  }, []);
   return (
     <section className={styles.hero} ref={ref}>
       <div className={styles.container}>

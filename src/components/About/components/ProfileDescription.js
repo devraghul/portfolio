@@ -1,12 +1,16 @@
 "use client";
 
-import React from "react";
+import React, { useEffect, useState } from "react";
 import styles from "../About.module.css";
 import { personalInfo, cmsStaticData } from "@/CMS/details";
 import { determineRoleFromParams } from "@/utils/determine-role-from-params";
 
 export const ProfileDescription = ({ inView }) => {
-  const role = determineRoleFromParams(window?.location?.search || "");
+  const [role, setRole] = useState(() => determineRoleFromParams(""));
+
+  useEffect(() => {
+    setRole(determineRoleFromParams(window?.location?.search || ""));
+  }, []);
   return (
     <div
       className={`${styles.personalInfo} ${inView ? styles.slideInLeft : ""}`}
