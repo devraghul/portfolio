@@ -33,7 +33,7 @@ export const Hero = () => {
               <span className={styles.titleLine1}>Raghul</span>
               <span className={styles.titleLine2}>Rajalingam</span>
               <span className={styles.titleAccent}>
-                `{role}` Developer & Creative Engineer
+                {role} Developer & Creative Engineer
               </span>
             </animated.h1>
 
