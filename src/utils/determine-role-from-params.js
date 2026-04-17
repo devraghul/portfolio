@@ -1,5 +1,5 @@
-export const determineRoleFromParams = () => {
-    const id = new URLSearchParams(window?.location?.search).get("a");
+export const determineRoleFromParams = (search) => {
+    const id = new URLSearchParams(search).get("a");
     if (id) return "Full stack";
     else return "React"
 };

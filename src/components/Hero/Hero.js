@@ -15,7 +15,7 @@ export const Hero = () => {
     ctaAnimation,
     scrollToProjects,
   } = useHeroScroll();
-  const role = determineRoleFromParams();
+  const role = determineRoleFromParams(window?.location?.search || "");
   return (
     <section className={styles.hero} ref={ref}>
       <div className={styles.container}>
