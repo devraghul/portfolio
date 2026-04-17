@@ -4,6 +4,7 @@ import React from "react";
 import {
   About,
   Contact,
+  CustomCursor,
   Footer,
   Hero,
   Navigation,
@@ -18,6 +19,7 @@ export default function Home() {
     <ThemeProvider>
       <div className={styles.page}>
         <Navigation />
+        <CustomCursor />
         <main className={styles.main}>
           <section id="home">
             <Hero />
