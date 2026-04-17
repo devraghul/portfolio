@@ -5,7 +5,7 @@ export const personalInfo = {
   email: "hello@raghulr.com",
   phone: "+1 (555) 123-4567",
   location: "India, Chennai",
-  linkedIn: "https://linkedin.com/in/raghulr",
+  linkedIn: "https://linkedin.com/in/raghul-dev",
   github: "https://github.com/raghulr",
   twitter: "https://twitter.com/raghulr",
   totalExperience: `${calculateExperience("2021-03-21")}+`,
